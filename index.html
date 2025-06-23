@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ragentech - AI-Powered IoT Management Platform</title>
+    <meta name="description" content="Advanced AI-integrated IoT management platform for real-time telemetry monitoring, predictive analytics, and smart device control for enterprise clients." />
+    <meta name="keywords" content="IoT, AI, predictive analytics, telemetry, smart devices, enterprise, industrial automation" />
+    <meta property="og:title" content="Ragentech - AI-Powered IoT Management Platform" />
+    <meta property="og:description" content="Transform your industrial operations with AI-driven insights, real-time telemetry monitoring, and predictive maintenance solutions." />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:url" content="https://ragentech.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+
+  <body class="bg-black">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Tawk.to Chat Integration -->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+
+  (function () {
+    var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/6858ec3db8cc78190c853ae1/1iudllkdm';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
+
+      // Hide default widget on load
+      Tawk_API.onLoad = function () {
+        Tawk_API.hideWidget();
+      };
+    </script>
+
+    <!-- Custom Chat Button -->
+    <div id="chatbot-button" onclick="toggleTawk()" aria-label="Open Chatbot">
+      💬 Chat with Us
+    </div>
+    <style>
+      #chatbot-button {
+        position: fixed;
+        bottom: 90px;
+        right: 20px;
+        background: rgba(73, 218, 132, 0.2);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(73, 218, 132, 0.4);
+        color: white;
+        padding: 10px 16px;
+        font-size: 13px;
+        font-weight: 600;
+        border-radius: 9999px;
+        cursor: pointer;
+        z-index: 10000;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+        transition: all 0.3s ease;
+        user-select: none;
+      }
+
+      #chatbot-button:hover {
+        background: rgba(73, 218, 132, 0.35);
+        transform: scale(1.05);
+      }
+    </style>
+    <script>
+      function toggleTawk() {
+        if (window.Tawk_API && typeof Tawk_API.maximize === 'function') {
+          Tawk_API.maximize(); // open the hidden chat widget
+        } else {
+          console.warn("Tawk.to not loaded yet.");
+        }
+      }
+    </script>
+
+    <!-- GDPR Notice (Glassmorphic Compact) -->
+    <div id="gdpr-banner">
+      <span>We use cookies. <a href="/privacy-policy" target="_blank">Learn more</a>.</span>
+      <button onclick="acceptCookies()">Accept</button>
+    </div>
+    <style>
+      #gdpr-banner {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        right: auto;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        color: #fff;
+        font-size: 13px;
+        padding: 10px 14px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        z-index: 10000;
+        max-width: 300px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+      }
+
+      #gdpr-banner button {
+        background-color: #49da84;
+        color: black;
+        border: none;
+        padding: 6px 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+      }
+
+      #gdpr-banner a {
+        color: #49da84;
+        text-decoration: underline;
+      }
+    </style>
+    <script>
+      function acceptCookies() {
+        document.getElementById("gdpr-banner").style.display = "none";
+        localStorage.setItem("cookiesAccepted", "true");
+      }
+
+      window.onload = function () {
+        if (localStorage.getItem("cookiesAccepted") === "true") {
+          document.getElementById("gdpr-banner").style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
